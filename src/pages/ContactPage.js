@@ -22,6 +22,7 @@ const ContactPage = () => {
                         allowFullScreen=""
                         aria-hidden="false"
                         tabIndex="0"
+                        title="Pathankot"
                     ></iframe>
                 </div>
                 <div className="contact-sect">
