@@ -7,9 +7,9 @@ import Title from "../components/Title";
 
 const ContactPage = () => {
     return (
-        <div>
+        <>
             <div className="title">
-                <Title title={"Contact Us"} span={"Contact Us"} />
+                <Title title={"Contact"} span={"Contact"} />
             </div>
             <div className="ContactPage">
                 <div className="map-sect">
@@ -46,7 +46,7 @@ const ContactPage = () => {
                     />
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

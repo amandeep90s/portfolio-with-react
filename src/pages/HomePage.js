@@ -23,16 +23,16 @@ const HomePage = () => {
                 </p>
 
                 <div className="icons">
-                    <Link className="icon-holder">
+                    <Link to="/" className="icon-holder">
                         <FontAwesomeIcon
                             icon={faFacebook}
                             className="icon fb"
                         />
                     </Link>
-                    <Link className="icon-holder">
+                    <Link to="/" className="icon-holder">
                         <FontAwesomeIcon icon={faGithub} className="icon gh" />
                     </Link>
-                    <Link className="icon-holder">
+                    <Link to="/" className="icon-holder">
                         <FontAwesomeIcon icon={faYoutube} className="icon yt" />
                     </Link>
                 </div>

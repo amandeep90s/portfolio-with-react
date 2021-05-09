@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.scss";
-import Navbar from "./components/Navbar";
 import { Route, Switch } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import PortfoliosPage from "./pages/PortfoliosPage";
@@ -9,11 +9,23 @@ import ContactPage from "./pages/ContactPage";
 import BlogsPage from "./pages/BlogsPage";
 
 const App = () => {
+    const [navToggle, setNavToggle] = useState(false);
+
+    const navClick = () => {
+        setNavToggle(!navToggle);
+    };
+
     return (
         <div className="App">
-            <div className="sidebar">
+            <div className={`sidebar ${navToggle ? "nav-toggle" : ""}`}>
                 <Navbar />
             </div>
+            <div className="nav-btn" onClick={navClick}>
+                <div className="lines-1"></div>
+                <div className="lines-2"></div>
+                <div className="lines-3"></div>
+            </div>
+
             <div className="main-content">
                 <div className="content">
                     <Switch>
